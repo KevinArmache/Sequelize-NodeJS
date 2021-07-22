@@ -8,7 +8,7 @@ const db = require("./models");
 const { User } = require("./models");
 
 app.get("/select", (req, res) => {
-  User.findAll({ where: { name: "kebo" } }) //for to find all users let find all like this findAll()
+  User.findAll({ where: { name: "kebo" } }) // for to find all users let find all like this findAll()
     .then((users) => {
       res.send(users);
     })
